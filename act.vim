@@ -90,13 +90,17 @@ syn match   keywords 'in range'
 
 " Operators
 
-syn match   operators '|->' skipWhite
-syn match   operators '=>'  skipWhite
-syn match   operators '-'   skipWhite
-syn match   operators '+'   skipWhite
-syn match   operators '=='  skipWhite
-syn match   operators '<='  skipWhite
-syn match   operators '>='  skipWhite
+syn match   operators "+\-"
+syn match   operators "\v>\<"
+syn match   operators "\v>=\<="
+syn match   operators "=\=="
+syn match   operators ":"
+syn match   operators "=>"
+syn match   operators "|->"
+syn match   operators "/"
+syn match   operators "\*"
+syn match   operators "mod"
+syn match   operators "pow\d*"
 
 " Behaviour
 
