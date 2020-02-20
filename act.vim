@@ -106,6 +106,11 @@ syn match   operators "pow\d*"
 
 syn match   mapping "\[\|\]"
 
+" Comments
+
+syn keyword todo FIXME NOTE TODO contained
+syn match   comment "//.*$" contains=actTodo
+
 " Behaviour
 
 syn match   keywords 'behaviour ' nextgroup=behaviour
