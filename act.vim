@@ -117,7 +117,7 @@ syn match   comment "//.*$" contains=actTodo
 
 " K Syntax
 
-syn match kOperator "-Word"
+syn match Operator "-Word"
 syn match Function "#\{1}\w*"
 syn keyword Function chop
 syn match Conditional "#if"
@@ -155,4 +155,6 @@ hi def link operators Operator
 hi def link of        Statement
 hi def link types     Type
 hi def link constants Constant
+hi def link mapping   Identifier
+hi def link comment   Comment
 
