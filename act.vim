@@ -111,6 +111,16 @@ syn match   mapping "\[\|\]"
 syn keyword todo FIXME NOTE TODO contained
 syn match   comment "//.*$" contains=actTodo
 
+" K Syntax
+
+syn match kOperator "-Word"
+syn match Function "#\{1}\w*"
+syn keyword Function chop
+syn match Conditional "#if"
+syn match Conditional "#fi"
+syn match Conditional "#then"
+syn match Conditional "#else"
+
 " Behaviour
 
 syn match   keywords 'behaviour ' nextgroup=behaviour
