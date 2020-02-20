@@ -102,6 +102,10 @@ syn match   operators "\*"
 syn match   operators "mod"
 syn match   operators "pow\d*"
 
+" Mapping
+
+syn match   mapping "\[\|\]"
+
 " Behaviour
 
 syn match   keywords 'behaviour ' nextgroup=behaviour
