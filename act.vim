@@ -84,18 +84,22 @@ syn keyword types byte bytes bytes1 bytes2 bytes3 bytes4 bytes5 bytes6 bytes7 by
 " Basic keywords
 
 syn keyword keywords types storage iff if returns balance gas pc calls stack where
-syn match   keywords 'for all'
-syn match   keywords 'such that'
-syn match   keywords 'in range'
+syn match   keywords "\<for all\>"
+syn match   keywords "\<such that\>"
 
 " Operators
 
-syn match   operators "+\-"
-syn match   operators "\v>\<"
-syn match   operators "\v>=\<="
-syn match   operators "=\=="
+syn match   operators "+"
+syn match   operators "-"
+syn match   operators ">"
+syn match   operators "<"
+syn match   operators ">="
+syn match   operators "<="
+syn match   operators "="
+syn match   operators "=="
 syn match   operators ":"
 syn match   operators "=>"
+syn match   operators ":="
 syn match   operators "|->"
 syn match   operators "/"
 syn match   operators "\*"
