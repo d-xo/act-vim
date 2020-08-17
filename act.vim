@@ -83,7 +83,7 @@ syn keyword types byte bytes bytes1 bytes2 bytes3 bytes4 bytes5 bytes6 bytes7 by
 
 " Basic keywords
 
-syn keyword keywords types storage iff if returns balance gas pc calls stack where
+syn keyword keywords types storage iff if returns balance gas pc calls stack where creates case
 syn match   keywords "\<for all\>"
 syn match   keywords "\<such that\>"
 
