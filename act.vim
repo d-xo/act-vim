@@ -133,6 +133,12 @@ syn match   behaviour contained /\<[a-zA-Z_$][0-9a-zA-Z_$]*/ nextgroup=of skipwh
 syn match   of contained 'of' nextgroup=contract skipwhite
 syn match   contract contained /\<[a-zA-Z_$][0-9a-zA-Z_$]*/ skipwhite
 
+" Constructor
+
+syn match   keywords 'constructor' nextgroup=of
+syn match   of contained 'of' nextgroup=contract skipwhite
+syn match   contract contained /\<[a-zA-Z_$][0-9a-zA-Z_$]*/ skipwhite
+
 " Constants
 
 syn keyword constants ACCT_ID CALLER_ID TIME BLOCK_NUMBER VCallValue VCallDepth 0
