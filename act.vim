@@ -1,5 +1,5 @@
 " Vim syntax file
-" Language:   Act <https://github.com/dapphub/klab>
+" Language:   Act <https://github.com/ethereum/act>
 " Maintainer: David Terry <me@xwvvvvwx.com>
 
 
@@ -95,22 +95,14 @@ syn match operators "=/="
 syn match operators ">="
 syn match operators "<="
 syn match operators "++"
-syn match operators ".."
-syn match operators "("
-syn match operators ")"
-syn match operators "="
 syn match operators ">"
 syn match operators "<"
-syn match operators ":"
 syn match operators "+"
 syn match operators "-"
 syn match operators "*"
 syn match operators "/"
 syn match operators "%"
 syn match operators "^"
-syn match operators "_"
-syn match operators "."
-syn match operators ","
 
 " Mapping
 
