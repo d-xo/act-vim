@@ -83,29 +83,34 @@ syn keyword types byte bytes bytes1 bytes2 bytes3 bytes4 bytes5 bytes6 bytes7 by
 
 " Basic keywords
 
-syn keyword keywords types storage iff if returns balance gas pc
-syn keyword keywords calls stack where creates case invariants
-syn match   keywords "\<for all\>"
-syn match   keywords "\<such that\>"
+syn keyword keywords of creates case returns storage noop iff and not or true false mapping ensures invariants if then else at
+syn match   keywords "\<iff in range\>"
 
 " Operators
 
-syn match   operators "+"
-syn match   operators "-"
-syn match   operators ">"
-syn match   operators "<"
-syn match   operators ">="
-syn match   operators "<="
-syn match   operators "="
-syn match   operators "=="
-syn match   operators ":"
-syn match   operators "=>"
-syn match   operators ":="
-syn match   operators "|->"
-syn match   operators "/"
-syn match   operators "\*"
-syn match   operators "mod"
-syn match   operators "pow\d*"
+syn match operators ":="
+syn match operators "=>"
+syn match operators "=="
+syn match operators "=/="
+syn match operators ">="
+syn match operators "<="
+syn match operators "++"
+syn match operators ".."
+syn match operators "("
+syn match operators ")"
+syn match operators "="
+syn match operators ">"
+syn match operators "<"
+syn match operators ":"
+syn match operators "+"
+syn match operators "-"
+syn match operators "*"
+syn match operators "/"
+syn match operators "%"
+syn match operators "^"
+syn match operators "_"
+syn match operators "."
+syn match operators ","
 
 " Mapping
 
@@ -115,16 +120,6 @@ syn match   mapping "\[\|\]"
 
 syn keyword todo FIXME NOTE TODO contained
 syn match   comment "//.*$" contains=actTodo
-
-" K Syntax
-
-syn match Operator "-Word"
-syn match Function "#\{1}\w*"
-syn keyword Function chop
-syn match Conditional "#if"
-syn match Conditional "#fi"
-syn match Conditional "#then"
-syn match Conditional "#else"
 
 " Behaviour
 
@@ -141,7 +136,7 @@ syn match   contract contained /\<[a-zA-Z_$][0-9a-zA-Z_$]*/ skipwhite
 
 " Constants
 
-syn keyword constants ACCT_ID CALLER_ID TIME BLOCK_NUMBER VCallValue VCallDepth 0
+syn keyword constants CALLER CALLVALUE CALLDEPTH ORIGIN BLOCKHASH BLOCKNUMBER DIFFICULTY CHAINID GASLIMIT COINBASE TIMESTAMP THIS NONCE
 
 " Interface
 
